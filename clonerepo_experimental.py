@@ -115,7 +115,7 @@ def run_script():
 
     def clone_and_copy_repo(repo_path):
         # New repository link
-        new_repo_link = "https://github.com/alexlnkp/Mangio-RVC-Tweaks/"
+        new_repo_link = "https://github.com/DeiantV/Mangio-RVC-Tweaks/"
         # Temporary path to clone the repository
         temp_repo_path = "/content/temp_Mangio-RVC-Fork"
         # New folder name
@@ -125,7 +125,7 @@ def run_script():
         run_cmd(f"git clone {new_repo_link} {temp_repo_path}")
         os.chdir(temp_repo_path)
 
-        run_cmd(f"git checkout ui-redesign-2")
+        run_cmd(f"git checkout c05522ee7d6a2d9d8672d41eb4c95ddeb12739fb")
 
         # Edit the file here, before copying
         #edit_file(f"{temp_repo_path}/infer-web.py")
